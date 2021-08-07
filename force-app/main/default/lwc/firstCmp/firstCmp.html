@@ -2,11 +2,34 @@
   @description       : 
   @author            : ChangeMeIn@UserSettingsUnder.SFDoc
   @group             : 
-  @last modified on  : 08-02-2021
+  @last modified on  : 08-07-2021
   @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 -->
 <template>
-    <h1>Hello Worlds from Lightning..!! First Lightning Page App tab Displayed</h1>
-    <br/>  Age is {my_age}
-    
+  <div>
+  Hello WOrld! Welcome to LWC 
+  <br/>My name in LWC  is  {name}
+
+  <lightning-input type="text" label="Enter your Name" onkeyup={changeAge}>
+ 
+      
+  </lightning-input>
+
+  <br/><br/>
+  <lightning-input type="text" label="Enter Student  Name" onkeyup={changeSname}>        
+  </lightning-input> <br/>
+  Name of the Student {Student.sname} 
+  
+  <br/>
+  <lightning-input type="text" label="Enter Student City" onkeyup={changeSaddress}>        
+  </lightning-input><br/>
+  He lives in {Student.sadress}  city
+
+
+<br/><br/>
+Value of num1 : {num1}<br/>
+Value of num2 : {num2}<br/>
+
+Product of {num1} * {num2} = {result}
+</div>
 </template>

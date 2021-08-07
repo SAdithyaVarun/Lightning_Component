@@ -1,0 +1,20 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 08-06-2021
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card title="Apex Wire Example">
+        <template if:true={accs.data}>
+            <template for:item="ac" for:each={accs.data} >
+               <div key={ac.id}>
+                 Name : {ac.Name}
+                 Industry : {ac.Industry}
+                 AnnualRevenue : {ac.AnnualRevenue}
+                </div>
+            </template>
+        </template>
+    </lightning-card>
+</template>
